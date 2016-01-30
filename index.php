@@ -1,6 +1,6 @@
 <?php
 header ('Content-type: text/html; charset=utf-8');
-$JSON_Data = @json_decode(file_get_contents('https://ancient-savannah-54530.herokuapp.com/apis/usersList.php'), TRUE);
+$JSON_Data = @json_decode(file_get_contents('https://tecvidya.herokuapp.com/api/usersList.php'), TRUE);
 //$JSON_Data = @json_decode(file_get_contents('http://localhost/tecvidya/apis/usersList.php'), TRUE);
 ?>
 <html>
