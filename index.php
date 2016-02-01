@@ -1,11 +1,10 @@
 <?php
 header ('Content-type: text/html; charset=utf-8');
 $JSON_Data = @json_decode(file_get_contents('https://tecvidya.herokuapp.com/api/usersList.php'), TRUE);
-//$JSON_Data = @json_decode(file_get_contents('http://localhost/tecvidya/apis/usersList.php'), TRUE);
 ?>
 <html>
 	<head>
-		<link rel="stylesheet" href="./css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 	</head>
 	<body>
 		<h1>Listagem de Usuários</h1>
