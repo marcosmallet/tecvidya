@@ -1,14 +1,15 @@
 <?php
 header ('Content-type: text/html; charset=utf-8');
-$JSON_Data = @json_decode(file_get_contents('https://tecvidya.herokuapp.com/api/usersList.php'), TRUE);
+$JSON_Data = @json_decode(file_get_contents('https://tecvidya-php.herokuapp.com/api/usersList.php'), TRUE);
 ?>
 <html>
 	<head>
 		<link rel="stylesheet" href="./css/bootstrap.min.css">
 	</head>
 	<body>
-		<h1>Listagem de Usuários</h1>
-		<div class="table-responsive">
+		<div class="table-responsive container-fluid">
+			<h1>Listagem de Usuários</h1>
+			<br>
 			<table class="table table-hover">
 				<tr>
 					<th> # </th>
